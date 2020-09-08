@@ -1,18 +1,18 @@
 .title-container{
-                 background-color: rd;
+                
                  height: 60px;
                  width:100%;
                  position: relative;
 }
 .second-container{
-                  background-color: whit;
+
                   width: 100%;
                   height:450px;
                   position: relative;
 }
 .spot1{
      position: relative;
-     background-color: rd;
+
      height: 500px;
      width: 600px;
      float: left;
@@ -20,7 +20,7 @@
 }
 .spot2{
      position: relative;
-     background-color: gren;
+
      height: 500px;
      width: 600px;
      float: left;
@@ -37,7 +37,7 @@
           float: left;
           font-family: 'montserrat';
           text-shadow:0px 0px 20px #5D3288;
-          background-color:ble;
+
 
 }
 .text-header3{
@@ -52,7 +52,7 @@
             float: left;
             font-family: 'montserrat';
             text-shadow:0px 0px 20px #5D3288;
-            background-color:rd;
+
 
 }
 .text-header1{
@@ -60,7 +60,7 @@
             float: left;
             font-family: 'montserrat';
             text-shadow:0px 0px 20px #5D3288;
-            background-color:blu;
+
 
 
 }
@@ -95,7 +95,7 @@
                margin-bottom:150px;
                top: 15%;
                left: 7.4%;
-               background-color:rd;
+
              }
 .spotify2 {
                   position: absolute;
@@ -106,7 +106,7 @@
                   margin-bottom:150px;
                   top: 15%;
                   left: 7.4%;
-                  background-color:rd;
+
 
 }
 .img-container {
@@ -115,7 +115,6 @@
                margin-top:30px;
                margin-bottom:30px;
                position: relative;
-               background-color: bue;
                left: 4%;
 
 }
