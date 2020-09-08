@@ -1,0 +1,289 @@
+.title-container{
+                 background-color: rd;
+                 height: 60px;
+                 width:100%;
+                 position: relative;
+}
+.second-container{
+                  background-color: whit;
+                  width: 100%;
+                  height:450px;
+                  position: relative;
+}
+.spot1{
+     position: relative;
+     background-color: rd;
+     height: 500px;
+     width: 600px;
+     float: left;
+     margin-right: 105px;
+}
+.spot2{
+     position: relative;
+     background-color: gren;
+     height: 500px;
+     width: 600px;
+     float: left;
+}
+.text-header2{
+          margin: 5px;
+          height: auto;
+          width: 200px;
+          margin-bottom: 20px;
+          position: relative;
+          color: white;
+          top: 2%;
+          left:10.2%;
+          float: left;
+          font-family: 'montserrat';
+          text-shadow:0px 0px 20px #5D3288;
+          background-color:ble;
+
+}
+.text-header3{
+            margin: 5px;
+            height: auto;
+            width: auto;
+            margin-bottom: 20px;
+            position: relative;
+            color: white;
+            top: 2%;
+            left:10.2%;
+            float: left;
+            font-family: 'montserrat';
+            text-shadow:0px 0px 20px #5D3288;
+            background-color:rd;
+
+}
+.text-header1{
+            color: white;
+            float: left;
+            font-family: 'montserrat';
+            text-shadow:0px 0px 20px #5D3288;
+            background-color:blu;
+
+
+}
+
+.text-headers:hover{
+                  color: #461F6D;
+                  cursor: text;
+                  border-radius: 25px;
+                  text-shadow: none ;
+                  -webkit-transition: all 0.3s ease;
+                  -moz-transition: all 0.3s ease;
+                  -o-transition: all 0.3s ease;
+                  -ms-transition: all 0.3s ease;
+                  transition: all 0.3s ease;
+}
+.spotify-container{
+              width: 92%;
+              height:auto;
+              margin-top:30px;
+              margin-bottom:30px;
+              position: relative;
+              background-color: bl;
+              left: 3%;
+}
+
+.spotify{
+               position: absolute;
+               margin: 20px;
+               width: 420px;
+               height:300px;
+               margin-top:5px;
+               margin-bottom:150px;
+               top: 15%;
+               left: 7.4%;
+               background-color:rd;
+             }
+.spotify2 {
+                  position: absolute;
+                  margin: 20px;
+                  width: 420px;
+                  height:300px;
+                  margin-top:5px;
+                  margin-bottom:150px;
+                  top: 15%;
+                  left: 7.4%;
+                  background-color:rd;
+
+}
+.img-container {
+               width: 92%;
+               height:300px;
+               margin-top:30px;
+               margin-bottom:30px;
+               position: relative;
+               background-color: bue;
+               left: 4%;
+
+}
+
+.imgs:hover img{
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+
+
+}
+.imgs:hover div{
+      opacity: 95%;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      animation-duration: 0.6;
+
+
+
+}
+
+.imgs2{
+           position:absolute;
+           overflow: hidden;
+           width: 420px;
+           height:210px;
+
+
+}
+.img1, .img2, .img3, .img4 {
+      height:168px;
+      width: 300px;
+      margin: 11px;
+      position: relative;
+      float:left;
+
+}
+
+.inner-text{
+            position: absolute;
+            top: 40%;
+            left: 17.5%;
+            color: white;
+            height: auto;
+            width: 210px;
+            opacity: 0%;
+            cursor: pointer;
+            text-align: center;
+            font-size: 17px;
+            font-family:'montserrat';
+}
+
+.prev , .next {
+               cursor: pointer;
+               position: absolute;
+               top: 36%;
+               width: auto;
+               padding: 16px;
+               Color:white;
+               background-color: #5D328;
+               border-radius: 25px;
+               -webkit-filter:brightness(70%) ease;
+               font-size: 20px;
+}
+.next {
+       right: 1%;
+
+
+
+}
+.prev {
+       left: 1%;
+
+}
+
+.prev:hover , .next:hover {
+                    background-color: black;opacity: 0.3;
+                    color: white ;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+
+}
+
+.Slides{
+        opacity: 70%;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        -ms-transition: all 0.6s ease;
+        transition: all 0.6s ease;
+}
+.Slides:hover {
+          -webkit-filter: brightness(50%);
+          -webkit-transition: all 0.6s ease;
+          -moz-transition: all 0.6s ease;
+          -o-transition: all 0.6s ease;
+          -ms-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+
+}
+.header-title{
+        position: relative;
+        float: left;
+        width: 80%;
+        margin-left: 4.9%;
+        height:auto ;
+        background-color: rd;
+}
+.subcontainer {
+        position: relative;
+      /*background-color: rgba(0, 0, 0, 0.5);*/
+        width: 30%;
+        height: 320px;
+        margin-bottom: 200px;
+        left: 35%;
+        top: 100px;
+        border-radius: 25px;
+
+
+}
+.submitions{
+        position: relative;
+        display: flex;
+        margin-top: 20px;
+        height: 30px;
+        width: 70%;
+        left:15%;
+        border:none;
+        outline: none;
+        background: transparent;
+        border-bottom: 1px solid white;
+        color: white;
+        font-family: 'montserrat';
+        font-size: 13px;
+        font-weight: bold;
+
+
+
+
+}
+
+.button-holder{
+        text-align: center;
+
+}
+.button{
+      opacity: 70%;
+      margin-top: 20px;
+      height: 40px;
+      width: 50%;
+      color: black;
+      cursor:pointer;
+      font-family: 'montserrat';
+      font-size: 14px;
+      font-weight: bold ;
+
+}
+.button:hover{
+      opacity: 100%;
+      color: #5D3288;
+
+}

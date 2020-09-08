@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="slides.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="BS-css.css">
+    <link rel="stylesheet" href="Body.css">
+    <meta charset="utf-8">
+    <title>(under maintenance)BassSlayer</title>
+  </head>
+  <body>
+    <div class="Header">
+      <div class="inheader">
+        <div class="logo-container">
+           <a href="BassSlayer Website.html"> <img onmouseover="changelogo()" onmouseout="changelogoback()" id="lg" src="logo.png" alt="BassSlayer-Logo" > </a>
+
+        </div>
+
+          <ul class="navigation">
+            <a href="BassSlayer About"> <li>About</li> </a>
+            <a href="BassSlayer Submission.html"> <li>Submission</li></a>
+            <a href="BassSlayer Website.html"> <li>Home</li> </a>
+
+          </ul>
+      </div>
+
+    </div>
+    <br>
+    <div class="header-title"><h1 class="text-header1 text-headers">Submission</h1></div>
+    <div class ="subcontainer">
+      <form method="post" action="scripts.php">
+        <input class="submitions" id="fname" type="text" name="full_name" placeholder="Full-Name" >
+        <input class="submitions" id="mail" type="text" name="e_mail" placeholder="E-mail" required><span class="error"><?php echo $email_error?></span>
+        <input class="submitions"type="text" name="text" placeholder="Text" >
+        <input class="submitions"type="text" name="video_link" placeholder="Video Link" required>
+        <div class="button-holder"><input class="button" type="submit" name="Submit-Button" value="Submit" onclick="checkfname()" ></div>
+      </form>
+    </div>
+    <div class="bottom">
+      <div class="inbottom">
+        <ul class="socials-m">
+          <li><div ><a class="s-link" href="https://discord.gg/XPfJxe" target="_blank" > <img class="s-img" src="d.png" alt="Discord-logo"> </a></div></li>
+          <li><div ><a class="s-link" href="https://twitter.com/BassSlayer3" target="_blank" > <img class="s-img" src="t.png" alt="Twitter-logo"> </a></div></li>
+          <li><div ><a class="s-link" href="https://www.instagram.com/bass_slayer.yt/" target="_blank" > <img class="s-img" src="i.png" alt="Instagram-Logo"> </a></div></li>
+          <li><div ><a class="s-link" href=" https://open.spotify.com/user/avv6zw9u11gemdibx2h6u4689" target="_blank" > <img class="s-img" src="s.png" alt="Spotify-logo"> </a></div></li>
+          <li><div ><a class="s-link" href="https://www.youtube.com/c/bassslayerofficial?sub_confirmation=1" target="_blank" > <img class="s-img" src="y.png" alt="Youtube"> </a></div></li>
+        </ul>
+
+      </div>
+
+    </div>
+    <script src="scripts.js" type="text/javascript"></script>
+
+</body>
+</html>
