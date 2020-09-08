@@ -19,7 +19,7 @@
           margin: 0 auto;
 }
 body{
-     background-color: #150D1E ;#1B0D29;
+     background-color: #150D1E ;
 }
 .logo-container a img {
                         float: left;
@@ -115,7 +115,7 @@ a li:hover{
             float: left;
             font-family: 'montserrat';
             text-shadow:0px 0px 20px #5D3288;
-            background-color:blu;
+
 
 
 }
@@ -137,5 +137,5 @@ a li:hover{
         width: 80%;
         margin-left: 4.9%;
         height:auto ;
-        background-color: rd;
+
 }
