@@ -1,0 +1,15 @@
+.spotify-container{
+            display: flex;
+}
+.spotify{
+        float: left;
+}
+.spotify2{
+        float:right;
+}
+.text-header{
+         float: left;
+}
+.text-header2{
+        float:right;
+}
