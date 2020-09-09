@@ -9,6 +9,7 @@
     $subject = "Submiting a Video";
     $t = "Name: ${name}\n";
     $head = "From {$mail}\n{$txt} here is the video link hope u like it\n{$vid_link}";
+    mail($to , $subject , $t , $head);
    if (mail($to , $subject ,$t ,$head)){
     echo "<h1>Success!!</h1>";
   }else{
@@ -16,6 +17,4 @@
   }
 }
 
-
-}
 ?>
