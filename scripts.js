@@ -20,4 +20,10 @@ function checkfname(){
                document.getElementById('mail').value="";
             }
 
-          }        
+          }
+         var h = window.screen.height;
+         var w = window.screen.width;
+         var spotcon = h * 50 / 100 ;
+         var n = spotcon.toString()+ "px";
+         document.getElementById("spotify-container").style.height=n;
+         document.getElementById("me").innerHTML=n;
