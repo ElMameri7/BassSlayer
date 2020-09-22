@@ -4,55 +4,68 @@
     <link rel="stylesheet" href="Body.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="BS-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <title>(under maintenance)BassSlayer</title>
   </head>
-  <body>
+  <body >
     <div class="Header">
       <div class="inheader">
         <div class="logo-container">
            <a href="index.html"> <img onmouseover="changelogo()" onmouseout="changelogoback()" id="lg" src="logo.png" alt="BassSlayer-Logo" > </a>
         </div>
+        <div id="desktop">
           <ul class="navigation">
             <a href="about.html"> <li>About</li> </a>
             <a href="submission.html"> <li>Submission</li></a>
             <a href="index.html"> <li>Home</li> </a>
           </ul>
+          </div>
+          <div id="mobile">
+            <a href="javascript:void(0);" class="icon" onclick="switchNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div id="mobilenav">
+            <a href="index.html">Home</a>
+            <a href="submission.html">Submission</a>
+            <a href="about.html">About</a>
+          </div>
+          </div>
       </div>
     </div>
     <br>
     <div class="header-title"><h1 class="text-header1 text-headers">Latest Uploads</h1>
     </div>
-      <div class="img-container" >
-          <div class="img1 imgs"  >
+      <div id="img-container" >
+          <div id = "img1" class=" imgs"  >
             <a href="https://www.youtube.com/watch?v=vyuTbgGgm-8" target="_blank"><img src="1.jpg" alt="1" >
             <div class="inner-text">
               Ericovich, Despotem - Some Day
             </div>
             </a>
           </div>
-          <div class="img2 imgs" >
+          <div id = "img2" class=" imgs" >
             <a href="https://www.youtube.com/watch?v=XlC6JdAtXpA" target="_blank"><img src="2.jpg" alt="2" >
             <div class="inner-text">
               xoedoxo & iGerman - Falling (feat. Daly)
             </div>
             </a>
           </div>
-          <div class="img3 imgs" >
+          <div id = "img3" class=" imgs" >
             <a href="https://www.youtube.com/watch?v=9wXWgZRuZSY" target="_blank"><img src="3.jpg" alt="3">
             <div class="inner-text">
               Just A Gent - Leave Me To Wonder (Just A Gent Remix)
             </div>
             </a>
           </div>
-          <div class="img4 imgs"  >
+          <div id = "img4" class="imgs"  >
             <a href="https://www.youtube.com/watch?v=orFo40i1kWE" target="_blank"><img src="4.jpg" alt="4">
             <div class="inner-text">
               <p>Cadmium x Skrybe x Riell - Eat You Alive</p>
             </div>
             </a>
           </div>
-     </div>
+      </div>
     <div id="spotify-container">
     <div class="spot1">
      <h1 class="text-header2 text-headers">Top Hits</h1>
@@ -67,7 +80,7 @@
      </div>
    </div>
    </div>
-   
+
     <div class="bottom">
       <div class="inbottom">
         <ul class="socials-m">
