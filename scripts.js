@@ -25,7 +25,7 @@ function checkfname(){
 var wfull = window.screen.width;
 var h = window.innerHeight;
 var w = window.innerWidth;
-var min = w - 150;
+var min = w - 100;
 var neww =  min.toString()+"px";
 var frm = document.getElementById('ifrm');
 var frm2 = document.getElementById('ifrm2');
@@ -50,7 +50,7 @@ if (w < 599){
 document.getElementById('img-container').style.width = neww;
 function resize(){
          var w = window.innerWidth;
-         var min = w - 150;
+         var min = w - 100;
          var neww =  min.toString()+"px";
          document.getElementById('img-container').style.width = neww;
        }
