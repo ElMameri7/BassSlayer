@@ -12,18 +12,26 @@
     <div class="Header">
       <div class="inheader">
         <div class="logo-container">
-           <a href="BassSlayer Website.html"> <img onmouseover="changelogo()" onmouseout="changelogoback()" id="lg" src="logo.png" alt="BassSlayer-Logo" > </a>
-
+           <a href="index.html"> <img onmouseover="changelogo()" onmouseout="changelogoback()" id="lg" src="logo.png" alt="BassSlayer-Logo" > </a>
         </div>
-
-          <ul class="navigation">
+        <div id="desktop">
+          <ul class="navigation fade">
             <a href="about.html"> <li>About</li> </a>
             <a href="submission.html"> <li>Submission</li></a>
             <a href="index.html"> <li>Home</li> </a>
-
           </ul>
+          </div>
+          <div id="mobile">
+            <a href="javascript:void(0);" class="icon fade" onclick="switchNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div id="mobilenav" class="fade">
+            <a href="index.html">Home</a>
+            <a href="submission.html">Submission</a>
+            <a href="about.html">About</a>
+          </div>
+          </div>
       </div>
-
     </div>
     <br>
     <p id = "me" style="color:white;"></p>

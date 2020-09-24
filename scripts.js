@@ -27,34 +27,104 @@ var h = window.innerHeight;
 var w = window.innerWidth;
 var min = w - 150;
 var neww =  min.toString()+"px";
+var frm = document.getElementById('ifrm');
+var frm2 = document.getElementById('ifrm2');
+var spotmobile = document.getElementById('spotify-container-mobile');
 if (w < 537){
       document.getElementById('mobile').style.display = "block";
       document.getElementById('desktop').style.display = "none";
 }
+if (w < 1075){
+      document.getElementById('spotify-container-mobile').style.display = "block";
+      document.getElementById('spotify-container-desktop').style.display = "none";
+}
+if (w < 599){
+    frm.style.width = "416.67px";
+    frm.style.height = "250px";
+    frm2.style.width = "416.67px";
+    frm2.style.height = "250px";
+    document.getElementById('slider').style.width="417px";
+    spotmobile.style.width="486px";
+    spotmobile.style.height="309px";
+}
 document.getElementById('img-container').style.width = neww;
 function resize(){
          var w = window.innerWidth;
-         var min = w - 100;
+         var min = w - 150;
          var neww =  min.toString()+"px";
          document.getElementById('img-container').style.width = neww;
        }
 function renav(){
           var w = window.innerWidth;
+          var mobnav = document.getElementById('mobile');
+          var desknav = document.getElementById('desktop');
           if (w < 537){
-          document.getElementById('mobile').style.display = "block";
-          document.getElementById('desktop').style.display = "none";
-  }else if(w > 537) {
-          document.getElementById('mobile').style.display = "none";
-          document.getElementById('desktop').style.display = "block";
-    }
+               mobnav.style.display = "block";
+               desknav.style.display = "none";
+          }
+          else if(w > 537) {
+              mobnav.style.display = "none";
+              desknav.style.display = "block";
+          }
+          if(w < 1075){
+              document.getElementById('spotify-container-mobile').style.display = "block";
+              document.getElementById('spotify-container-desktop').style.display = "none";
+          }else if(w > 1075){
+              document.getElementById('spotify-container-mobile').style.display = "none";
+              document.getElementById('spotify-container-desktop').style.display = "flex";
+          }
+          if (w < 599){
+              frm.style.width = "416.67px";
+              frm.style.height = "250px";
+              frm2.style.width = "416.67px";
+              frm2.style.height = "250px";
+              document.getElementById('slider').style.width="417px";
+              spotmobile.style.width="486px";
+              spotmobile.style.height="309px";
+
+          }else if (w > 599) {
+              frm.style.width = "500px";
+              frm.style.height = "300px";
+              frm2.style.width = "500px";
+              frm2.style.height = "300px";
+              document.getElementById('slider').style.width="500px";
+              spotmobile.style.width="587px";
+              spotmobile.style.height="359px";
+
+
+          }
+
 }
 function switchNav(){
-  nav = document.getElementById('mobilenav');
-  if (nav.style.display === "block"){
+  var nav = document.getElementById('mobilenav');
+  if (nav.style.display === "flex"){
     nav.style.display = "none";
   }else{
-    nav.style.display = "block";
+    nav.style.display = "flex";
   }
+}
+function plusSlides() {
+    var spot1 =  document.getElementById('spotify');
+    var spot2 =  document.getElementById('spotify2');
+    if (spot1.style.display === "block"){
+      spot1.style.display = "none";
+      spot2.style.display = "block";
+    }else{
+      spot1.style.display = "block";
+      spot2.style.display = "none";
+    }
+}
+function minSlides(){
+  var spot1 =  document.getElementById('spotify');
+  var spot2 =  document.getElementById('spotify2');
+  if (spot2.style.display === "block"){
+    spot1.style.display = "block";
+    spot2.style.display = "none";
+  }else{
+    spot1.style.display = "none";
+    spot2.style.display = "block";
+  }
+
 }
 window.addEventListener("resize",resize);
 window.addEventListener("resize",renav);

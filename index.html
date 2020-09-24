@@ -15,17 +15,17 @@
            <a href="index.html"> <img onmouseover="changelogo()" onmouseout="changelogoback()" id="lg" src="logo.png" alt="BassSlayer-Logo" > </a>
         </div>
         <div id="desktop">
-          <ul class="navigation">
+          <ul class="navigation fade">
             <a href="about.html"> <li>About</li> </a>
             <a href="submission.html"> <li>Submission</li></a>
             <a href="index.html"> <li>Home</li> </a>
           </ul>
           </div>
           <div id="mobile">
-            <a href="javascript:void(0);" class="icon" onclick="switchNav()">
+            <a href="javascript:void(0);" class="icon fade" onclick="switchNav()">
               <i class="fa fa-bars"></i>
             </a>
-            <div id="mobilenav">
+            <div id="mobilenav" class="fade">
             <a href="index.html">Home</a>
             <a href="submission.html">Submission</a>
             <a href="about.html">About</a>
@@ -34,7 +34,8 @@
       </div>
     </div>
     <br>
-    <div class="header-title"><h1 class="text-header1 text-headers">Latest Uploads</h1>
+    <div class="header-title">
+      <h1 class="text-header1 text-headers">Latest Uploads</h1>
     </div>
       <div id="img-container" >
           <div id = "img1" class=" imgs"  >
@@ -65,21 +66,32 @@
             </div>
             </a>
           </div>
-      </div>
-    <div id="spotify-container">
-    <div class="spot1">
-     <h1 class="text-header2 text-headers">Top Hits</h1>
-     <div class="spotify">
+  </div>
+<div id="spotify-container-desktop">
+     <div class="spotify fade">
+        <h1 class="text-header2 text-headers">Top Hits</h1>
         <iframe src="https://open.spotify.com/embed/user/avv6zw9u11gemdibx2h6u4689/playlist/4kRkjfFLZ5qIKoNLtSgs69" width="500px" height="300px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
      </div>
-   </div>
-   <div class="spot2">
-     <h1 class="text-header3 text-headers">Spotify Uploads</h1>
-     <div class="spotify2">
+     <div class="spotify fade">
+       <h1 class="text-header3 text-headers">Spotify Uploads</h1>
        <iframe src="https://open.spotify.com/embed/playlist/5ndbdclYoPC0MiGuomaG7F" width="500px" height="300px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
      </div>
+</div>
+<div id="spotify-container-mobile">
+    <div id = "slider">
+     <div id="spotify" class="fade">
+        <h1 class="text-header4 text-headers">Top Hits</h1>
+        <iframe id="ifrm" src="https://open.spotify.com/embed/user/avv6zw9u11gemdibx2h6u4689/playlist/4kRkjfFLZ5qIKoNLtSgs69" width="500px" height="300px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+     </div>
+     <div id="spotify2" class="fade">
+       <h1 class="text-header5 text-headers">Spotify Uploads</h1>
+       <iframe id="ifrm2"src="https://open.spotify.com/embed/playlist/5ndbdclYoPC0MiGuomaG7F" width="500px" height="300px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+     </div>
    </div>
-   </div>
+   <a class="prev" onclick="minSlides()">&#10094;</a>
+   <a class="next" onclick="plusSlides()">&#10095;</a>
+</div>
+
 
     <div class="bottom">
       <div class="inbottom">
