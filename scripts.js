@@ -38,14 +38,20 @@ if (w < 1075){
       document.getElementById('spotify-container-mobile').style.display = "block";
       document.getElementById('spotify-container-desktop').style.display = "none";
 }
-if (w < 599){
-    frm.style.width = "416.67px";
-    frm.style.height = "250px";
-    frm2.style.width = "416.67px";
-    frm2.style.height = "250px";
-    document.getElementById('slider').style.width="417px";
-    spotmobile.style.width="486px";
-    spotmobile.style.height="309px";
+if (w < 1075){
+      var countWidth = w - 12 ;
+      var newwidth = countWidth.toString() + "px"
+      var countFrm = w - 84 ;
+      var countSlider = w - 84;
+      var newSlider = countSlider.toString() + "px";
+      var newFrm = countFrm.toString() + "px";
+      frm.style.width = newFrm;
+      frm.style.height = "250px";
+      frm2.style.width = newFrm;
+      frm2.style.height = "250px";
+  document.getElementById('slider').style.width=newSlider;
+  spotmobile.style.width=newwidth;
+  spotmobile.style.height="350px";
 }
 document.getElementById('img-container').style.width = neww;
 function resize(){
@@ -74,13 +80,19 @@ function renav(){
               document.getElementById('spotify-container-desktop').style.display = "flex";
           }
           if (w < 599){
-              frm.style.width = "416.67px";
+              var countWidth = w - 12 ;
+              var newwidth = countWidth.toString() + "px"
+              var countFrm = w - 84 ;
+              var countSlider = w - 84;
+              var newSlider = countSlider.toString() + "px";
+              var newFrm = countFrm.toString() + "px";
+              frm.style.width = newFrm;
               frm.style.height = "250px";
-              frm2.style.width = "416.67px";
+              frm2.style.width = newFrm;
               frm2.style.height = "250px";
-              document.getElementById('slider').style.width="417px";
-              spotmobile.style.width="486px";
-              spotmobile.style.height="309px";
+              document.getElementById('slider').style.width=newSlider;
+              spotmobile.style.width=newwidth;
+              spotmobile.style.height="350px";
 
           }else if (w > 599) {
               frm.style.width = "500px";
@@ -91,14 +103,7 @@ function renav(){
               spotmobile.style.width="587px";
               spotmobile.style.height="359px";
          }
-         if (w < 500){
-              var countHeight = w-228;
-              var newheight = countHeight.toString() + "px";
-              var newwidth = w.toString() + "px";
-              spotmobile.style.width=newwidth;
-              spotmobile.style.height=newheight;
-         }
-
+  
 
 }
 function switchNav(){

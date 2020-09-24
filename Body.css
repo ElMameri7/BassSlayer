@@ -83,7 +83,7 @@
 #spotify-container-mobile{
              width: 587px;
              height: 359px;
-             background-color: wite;
+             background-color: blue;
              margin: auto;
              position: relative;
              display: none;
@@ -92,7 +92,7 @@
 #slider{
               width:500px;
               height: 359px;
-              background-color: ble;
+              background-color: bue;
               margin: auto;
               overflow: hidden;
 
