@@ -49,9 +49,9 @@ if (w < 1075){
       frm.style.height = "250px";
       frm2.style.width = newFrm;
       frm2.style.height = "250px";
-  document.getElementById('slider').style.width=newSlider;
-  spotmobile.style.width=newwidth;
-  spotmobile.style.height="350px";
+      document.getElementById('slider').style.width=newSlider;
+      spotmobile.style.width=newwidth;
+      spotmobile.style.height="350px";
 }
 document.getElementById('img-container').style.width = neww;
 function resize(){
@@ -79,7 +79,7 @@ function renav(){
               document.getElementById('spotify-container-mobile').style.display = "none";
               document.getElementById('spotify-container-desktop').style.display = "flex";
           }
-          if (w < 599){
+          if (w < 1075){
               var countWidth = w - 12 ;
               var newwidth = countWidth.toString() + "px"
               var countFrm = w - 84 ;
@@ -94,16 +94,7 @@ function renav(){
               spotmobile.style.width=newwidth;
               spotmobile.style.height="350px";
 
-          }else if (w > 599) {
-              frm.style.width = "500px";
-              frm.style.height = "300px";
-              frm2.style.width = "500px";
-              frm2.style.height = "300px";
-              document.getElementById('slider').style.width="500px";
-              spotmobile.style.width="587px";
-              spotmobile.style.height="359px";
-         }
-  
+          }
 
 }
 function switchNav(){
