@@ -90,9 +90,15 @@ function renav(){
               document.getElementById('slider').style.width="500px";
               spotmobile.style.width="587px";
               spotmobile.style.height="359px";
+         }
+         if (w < 500){
+              var countHeight = w-228;
+              var newheight = countHeight.toString() + "px";
+              var newwidth = w.toString() + "px";
+              spotmobile.style.width=newwidth;
+              spotmobile.style.height=newheight;
+         }
 
-
-          }
 
 }
 function switchNav(){
