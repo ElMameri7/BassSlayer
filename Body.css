@@ -112,13 +112,14 @@
 .prev , .next {
                cursor: pointer;
                position: absolute;
-               top: 55%;
+               top: 50%;
                width: auto;
                padding: 16px;
                Color:white;
                border-radius: 25px;
                font-size: 20px;
-               transform: translateY(-55%);
+               transform: translateY(-50%);
+               user-select: none;
 }
 .next {
        right: 0%;

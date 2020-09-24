@@ -58,6 +58,7 @@ body{
   display: none;
   position: relative;
   width: 100%;
+  user-select: none;
 }
 #mobilenav{
   display: none;
@@ -95,6 +96,7 @@ body{
       position: absolute;
       right: 0;
       top: 30px ;
+      user-select: none;
 }
 #mobile a.icon:hover{
               color: #461F6D;
@@ -106,6 +108,7 @@ body{
 }
 #desktop{
   display: block;
+  user-select: none;
 }
 a li:hover{
               color: #461F6D;
