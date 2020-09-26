@@ -99,10 +99,10 @@ function renav(){
 }
 function switchNav(){
   var nav = document.getElementById('mobilenav');
-  if (nav.style.display === "flex"){
-    nav.style.display = "none";
+  if (nav.style.top === "120px"){
+    nav.style.top = "80px";
   }else{
-    nav.style.display = "flex";
+    nav.style.top = "120px";
   }
 }
 function plusSlides() {

@@ -4,21 +4,30 @@
   list-style:none;
   text-decoration: none;
 }
+html body{
+   overflow-x: hidden;
+}
+.topHeader{
+        display: block;
+        width:100%;
+        height:150px;
+        }
 .Header{
         display: table;
-        border: solid black;
         background-color:black ;
         width:100%;
         height:100px;
-        position: sticky;
+        position: fixed;
+        z-index:10;
 
 }
 .inheader{
           height:100%;
           width:86%;
           background-color:;
-          margin: 0 auto;
-          position: sticky;
+          margin: auto;
+
+
 }
 body{
      background-color: #150D1E ;
@@ -61,13 +70,14 @@ body{
   user-select: none;
 }
 #mobilenav{
-  display: none;
+  display: flex;
   background-color: black;
-  margin: 0;
   height: 40px;
   width:100%;
-  position: relative;
-  right: 0;
+  position: fixed;
+  top: 80px;
+  z-index: 9;
+  transition: top 0.5s ease-out ;
 
 }
 #mobilenav a:hover{
@@ -79,12 +89,12 @@ body{
                transition: all 0.2s ease;
 }
 #mobilenav a {
-        font-size: 21px;
+        font-size: 24px;
         margin: auto;
         color:white;
         padding: 0;
         font-family: 'montserrat';
-
+        transition: font-size 1s ease-out;
 
 }
 #mobile a.icon{
