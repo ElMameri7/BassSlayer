@@ -22,11 +22,11 @@
 }
 .text-header1{
             color: white;
-            width: 100%;
+            width: auto;
             font-family: 'montserrat';
             text-shadow:0px 0px 20px #5D3288;
             display: block;
-            margin: 20px 0 20px 42px;
+            margin: 20px 38% 20px 42px;
 
 }
 .text-header2{
@@ -89,7 +89,7 @@
              margin: auto;
              position: relative;
              display: none;
-             padding-bottom: 50px;
+             padding-bottom: 80px;
 }
 #slider{
               width:500px;
@@ -114,13 +114,13 @@
 .prev , .next {
                cursor: pointer;
                position: absolute;
-               top: 50%;
+               top: 45%;
                width: auto;
                padding: 16px;
                Color:white;
                border-radius: 25px;
-               font-size: 20px;
-               transform: translateY(-50%);
+               font-size: 30px;
+               transform: translateY(-45%);
                user-select: none;
 }
 .next {
@@ -165,7 +165,7 @@
               height: 366px;
               margin: auto;
               margin-top:30px;
-              margin-bottom:30px;
+              margin-bottom:80px;
               background-color: ble;
               display: flex;
 
@@ -181,20 +181,20 @@
 }
 #img-container {
                background-color: rd;
-               width: 100%;
+               width: 93.5%;
                height:200px;
                padding-bottom: 50px;
                display: flex;
                margin: auto;
-               overflow: auto;
+               overflow: hidden;
+               transition: width 0.3s ease ;
+
 }
 .imgs{
       height: auto;
       width: 300px;
       background-color: lue;
       margin: auto;
-      overflow: hidden;
-
 }
 .imgs:hover img{
       -webkit-filter: brightness(50%);

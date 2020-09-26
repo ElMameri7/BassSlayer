@@ -21,12 +21,7 @@ function checkfname(){
             }
 
           }
-
-var wfull = window.screen.width;
-var h = window.innerHeight;
 var w = window.innerWidth;
-var min = w - 100;
-var neww =  min.toString()+"px";
 var frm = document.getElementById('ifrm');
 var frm2 = document.getElementById('ifrm2');
 var spotmobile = document.getElementById('spotify-container-mobile');
@@ -53,12 +48,23 @@ if (w < 1075){
       spotmobile.style.width=newwidth;
       spotmobile.style.height="350px";
 }
-document.getElementById('img-container').style.width = neww;
 function resize(){
          var w = window.innerWidth;
-         var min = w - 100;
-         var neww =  min.toString()+"px";
-         document.getElementById('img-container').style.width = neww;
+         if (w > 1303){
+           document.getElementById('img-container').style.width = "93.5%";
+         }
+         if (w < 1303){
+           document.getElementById('img-container').style.width = "900px";
+
+         }
+         if (w < 919){
+           document.getElementById('img-container').style.width = "600px";
+
+         }
+         if (w < 620){
+           document.getElementById('img-container').style.width = "300px";
+
+         }
        }
 function renav(){
           var w = window.innerWidth;
@@ -95,8 +101,7 @@ function renav(){
               spotmobile.style.height="350px";
 
           }
-
-}
+      }
 function switchNav(){
   var nav = document.getElementById('mobilenav');
   if (nav.style.top === "120px"){
