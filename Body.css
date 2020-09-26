@@ -22,6 +22,7 @@
 }
 .text-header1{
             color: white;
+            width: 100%;
             font-family: 'montserrat';
             text-shadow:0px 0px 20px #5D3288;
             display: block;
@@ -244,33 +245,22 @@
             font-size: 17px;
             font-family:'montserrat';
 }
-.header-title{
-        display: block;
-        float: left;
-        width: 80%;
-        margin-left: 4.9%;
-        height: auto ;
-        margin: 5px 5px 5px 0;
-        background-color: rd;
-}
+
 .subcontainer {
-        position: relative;
+        display: block;
+        background-color: rd;
         width: 30%;
-        height: 320px;
-        margin-bottom: 200px;
-        left: 35%;
-        top: 100px;
-        border-radius: 25px;
-
-
+        height: 479px;
+        margin: auto;
 }
 .submitions{
         position: relative;
         display: flex;
-        margin-top: 20px;
+        margin-bottom: 20px;
         height: 30px;
         width: 70%;
-        left:15%;
+        left:50%;
+        transform: translateX(-50%);
         border:none;
         outline: none;
         background: transparent;
@@ -279,9 +269,6 @@
         font-family: 'montserrat';
         font-size: 13px;
         font-weight: bold;
-
-
-
 
 }
 
@@ -300,6 +287,7 @@
       font-family: 'montserrat';
       font-size: 14px;
       font-weight: bold ;
+      transition: opacity 0.3s ease-in , color 0.3s ease;
 
 }
 .button:hover{

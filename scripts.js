@@ -130,5 +130,3 @@ function minSlides(){
 }
 window.addEventListener("resize",resize);
 window.addEventListener("resize",renav);
-document.getElementById("me").innerHTML=w;
-document.getElementById("spotify-container").style.width=n;
