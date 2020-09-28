@@ -25,6 +25,23 @@ var w = window.innerWidth;
 var frm = document.getElementById('ifrm');
 var frm2 = document.getElementById('ifrm2');
 var spotmobile = document.getElementById('spotify-container-mobile');
+var img1Slides = document.getElementById('img1');
+if (w > 1303){
+  document.getElementById('img-container-child').style.width = "100%";
+  document.getElementById('img-container-parent').style.width = "93.5%";
+}
+if (w < 1303){
+  document.getElementById('img-container-child').style.width = "900px";
+  document.getElementById('img-container-parent').style.width = "900px";
+}
+if (w < 919){
+  document.getElementById('img-container-child').style.width = "600px";
+  document.getElementById('img-container-parent').style.width = "600px";
+}
+if (w < 620){
+  document.getElementById('img-container-child').style.width = "300px";
+  document.getElementById('img-container-parent').style.width = "300px";
+}
 if (w < 537){
       document.getElementById('mobile').style.display = "block";
       document.getElementById('desktop').style.display = "none";
@@ -51,19 +68,24 @@ if (w < 1075){
 function resize(){
          var w = window.innerWidth;
          if (w > 1303){
-           document.getElementById('img-container').style.width = "93.5%";
+           document.getElementById('img-container-child').style.width = "100%";
+           document.getElementById('img-container-parent').style.width = "93.5%";
+           img1Slides.style.marginLeft = "0%"
          }
          if (w < 1303){
-           document.getElementById('img-container').style.width = "900px";
-
+           document.getElementById('img-container-child').style.width = "900px";
+           document.getElementById('img-container-parent').style.width = "900px";
+           img1Slides.style.marginLeft = "0%"
          }
          if (w < 919){
-           document.getElementById('img-container').style.width = "600px";
-
+           document.getElementById('img-container-child').style.width = "600px";
+           document.getElementById('img-container-parent').style.width = "600px";
+           img1Slides.style.marginLeft = "0%"
          }
          if (w < 620){
-           document.getElementById('img-container').style.width = "300px";
-
+           document.getElementById('img-container-child').style.width = "300px";
+           document.getElementById('img-container-parent').style.width = "300px";
+           img1Slides.style.marginLeft = "0%"
          }
        }
 function renav(){
@@ -109,6 +131,65 @@ function switchNav(){
   }else{
     nav.style.top = "120px";
   }
+}
+function next(){
+       var  w = window.innerWidth;
+       if(w < 620 ){
+          if (img1Slides.style.marginLeft === "0%"){
+                  img1Slides.style.marginLeft = "-100%";
+          }else if (img1Slides.style.marginLeft === "-100%"){
+                  img1Slides.style.marginLeft = "-200%";
+          }else if (img1Slides.style.marginLeft === "-200%"){
+                  img1Slides.style.marginLeft = "-300%";
+          }else{
+                  img1Slides.style.marginLeft = "0%";
+          }
+      }else if (w < 919) {
+          if (img1Slides.style.marginLeft === "0%"){
+                img1Slides.style.marginLeft = "-50%";
+          }else if (img1Slides.style.marginLeft === "-50%"){
+                  img1Slides.style.marginLeft = "-100%";
+          }else{
+                  img1Slides.style.marginLeft = "0%";
+          }
+
+      }else if (w < 1303) {
+          if (img1Slides.style.marginLeft === "0%"){
+              img1Slides.style.marginLeft = "-34%";
+          }else{
+                  img1Slides.style.marginLeft = "0%";
+          }
+      }
+}
+function prev(){
+        var  w = window.innerWidth;
+        if(w < 620 ){
+          if (img1Slides.style.marginLeft === "-300%"){
+              img1Slides.style.marginLeft = "-200%";
+            }else if (img1Slides.style.marginLeft === "-200%"){
+             img1Slides.style.marginLeft = "-100%";
+           }else if (img1Slides.style.marginLeft === "-100%"){
+             img1Slides.style.marginLeft = "-0%";
+            }else{
+             img1Slides.style.marginLeft = "-300%";
+           }
+         }else if (w < 919) {
+           if (img1Slides.style.marginLeft === "-100%"){
+           img1Slides.style.marginLeft = "-50%";
+         }else if (img1Slides.style.marginLeft === "-50%"){
+             img1Slides.style.marginLeft = "-0%";
+           }else{
+             img1Slides.style.marginLeft = "-100%";
+           }
+
+         }else if (w < 1303) {
+           if (img1Slides.style.marginLeft === "-34%"){
+             img1Slides.style.marginLeft = "0%";
+           }else{
+             img1Slides.style.marginLeft = "-34%";
+      }
+    }
+
 }
 function plusSlides() {
     var spot1 =  document.getElementById('spotify');

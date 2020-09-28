@@ -38,25 +38,26 @@
 
       </header>
       <h1 class="text-header1 text-headers">Latest Uploads</h1>
-      <div id="img-container" class="fade" >
-          <div id = "img1" class=" imgs"  >
+      <div id= "img-container-parent">
+      <div id="img-container-child" class="fade" >
+          <div id = "img1" class=" imgs" style="margin-left:0%" >
             <a href="https://www.youtube.com/watch?v=vyuTbgGgm-8" target="_blank"><img src="1.jpg" alt="1" >
             <div class="inner-text">
-              Ericovich, Despotem - Some Day
+              <p>Ericovich, Despotem - Some Day</p>
             </div>
             </a>
           </div>
           <div id = "img2" class=" imgs" >
             <a href="https://www.youtube.com/watch?v=XlC6JdAtXpA" target="_blank"><img src="2.jpg" alt="2" >
             <div class="inner-text">
-              xoedoxo & iGerman - Falling (feat. Daly)
+              <p>xoedoxo & iGerman - Falling (feat. Daly)</p>
             </div>
             </a>
           </div>
           <div id = "img3" class=" imgs" >
             <a href="https://www.youtube.com/watch?v=9wXWgZRuZSY" target="_blank"><img src="3.jpg" alt="3">
             <div class="inner-text">
-              Just A Gent - Leave Me To Wonder (Just A Gent Remix)
+              <p>Just A Gent - Leave Me To Wonder (Just A Gent Remix)</p>
             </div>
             </a>
           </div>
@@ -67,7 +68,10 @@
             </div>
             </a>
           </div>
-  </div>
+        </div>
+          <a class="next-imgs" onclick="next()">&#10095;</a>
+          <a class="prev-imgs" onclick="prev()">&#10094;</a>
+    </div>
 <div id="spotify-container-desktop">
      <div class="spotify fade">
         <h1 class="text-header2 text-headers">Top Hits</h1>

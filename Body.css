@@ -1,5 +1,4 @@
 .title-container{
-
                  height: 6.66%;
                  width:100%;
                  position: relative;
@@ -123,15 +122,30 @@
                transform: translateY(-45%);
                user-select: none;
 }
-.next {
-       right: 0%;
-
-
+.prev-imgs , .next-imgs {
+               display: none;
+               cursor: pointer;
+               position: absolute;
+               top: 55%;
+               width: auto;
+               padding: 16px;
+               Color:white;
+               border-radius: 25px;
+               font-size: 30px;
+               transform: translateY(-55%);
+               user-select: none;
+}
+@media screen and (max-width:1302px ){
+        .prev-imgs , .next-imgs {
+              display: block;
+        }
 
 }
-.prev {
+.next , .next-imgs {
+       right: 0%;
+}
+.prev , .prev-imgs{
        left: 0%;
-
 }
 .fade {
   -webkit-animation-name: fade;
@@ -149,7 +163,7 @@
   to {opacity: 1}
 }
 
-.prev:hover , .next:hover {
+.prev:hover , .next:hover , .prev-imgs:hover , .next-imgs:hover {
                     background-color: black;opacity: 0.3;
                     color: white ;
                     -webkit-transition: all 0.3s ease;
@@ -179,21 +193,32 @@
                height: 364.1px;
                background-color: ed;
 }
-#img-container {
+#img-container-parent{
+                position: relative;
+                margin: auto;
+                height: 337px;
+                margin-bottom: 5%;
+                transition: width 0.3s ease ;
+}
+#img-container-child {
                background-color: rd;
                width: 93.5%;
                height:200px;
                padding-bottom: 50px;
                display: flex;
-               margin: auto;
+               margin: 0%;
                overflow: hidden;
                transition: width 0.3s ease ;
-
+}
+#img1 {
+      margin-left: 0%;
+      transition: margin 0.5s ease-out;
 }
 .imgs{
+     position: relative;
       height: auto;
       width: 300px;
-      background-color: lue;
+      background-color: bue;
       margin: auto;
 }
 .imgs:hover img{
@@ -203,11 +228,6 @@
       -o-transition: all 0.6s ease;
       -ms-transition: all 0.6s ease;
       transition: all 0.6s ease;
-
-
-
-
-
 }
 .imgs:hover div{
       opacity: 95%;
@@ -219,23 +239,11 @@
       animation-duration: 0.6;
 
 }
-
-
-#img1, #img2, #img3, #img4 {
-      position: relative;
-      height:168px;
-      width: 430px;
-      margin: auto;
-
-
-
-
-}
-
 .inner-text{
             position: absolute;
             top: 40%;
-            left: 17.5%;
+            left: 50%;
+            transform: translateX(-50%);
             color: white;
             height: auto;
             width: 210px;
