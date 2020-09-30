@@ -194,12 +194,12 @@ function prev(){
 function plusSlides() {
     var spot1 =  document.getElementById('spotify');
     var spot2 =  document.getElementById('spotify2');
-    if (spot1.style.display === "block"){
-      spot1.style.display = "none";
-      spot2.style.display = "block";
-    }else{
+    if (spot1.style.display === "none"){
       spot1.style.display = "block";
       spot2.style.display = "none";
+    }else{
+      spot1.style.display = "none";
+      spot2.style.display = "block";
     }
 }
 function minSlides(){

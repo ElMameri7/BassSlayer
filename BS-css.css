@@ -150,13 +150,45 @@ a li:hover{
        vertical-align: middle;
 
 }
-.s-img:hover {
-          background-color: #461F6D;
-          -webkit-transition: all 0.2s ease;
-          -moz-transition: all 0.2s ease;
-          -o-transition: all 0.2s ease;
-          -ms-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+#discord:hover{
+  background-color: #656ab6;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#twitter:hover{
+  background-color: #1DA1F2;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#instagram:hover{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#spotify-logo:hover{
+  background-color: #1DB954;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#youtube:hover{
+  background-color: #FF0000;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .socials-m{
           margin-top:50px;
@@ -167,7 +199,6 @@ a li:hover{
 }
 .text-header1{
             color: white;
-            float: left;
             font-family: 'montserrat';
             text-shadow:0px 0px 20px #5D3288;
 

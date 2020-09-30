@@ -26,7 +26,6 @@
             text-shadow:0px 0px 20px #5D3288;
             display: block;
             margin: 20px 38% 20px 42px;
-
 }
 .text-header2{
           margin: 5px;
@@ -54,7 +53,7 @@
 .text-header4{
             margin: auto;
             height: auto;
-            width: 139.1px;
+            width: 196.1px;
             margin-bottom: 20px;
             color: white;
             font-family: 'montserrat';
@@ -196,7 +195,7 @@
 #img-container-parent{
                 position: relative;
                 margin: auto;
-                height: 337px;
+                height: 188px;
                 margin-bottom: 5%;
                 transition: width 0.3s ease ;
 }
