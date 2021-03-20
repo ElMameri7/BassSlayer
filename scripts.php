@@ -1,7 +1,7 @@
 <?php
 
   if ($_SERVER["REQUEST_METHOD"]=== "POST"){
-     $name = $_POST["name"];
+     $name = $_POST["full_name"];
      $mail = $_POST["e_mail"];
      $txt = $_POST["text"];
      $vid_link = $_POST["video_link"];
